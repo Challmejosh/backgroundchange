@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
+*{
     margin: 1rem;
     padding: 1rem;
     box-sizing: border-box;
@@ -40,25 +33,3 @@
     transition: 1s;
     background: blue;
 }
-    </style>
-    <script defer>
-        const switchBg = document.querySelector(".container");
-const body = document.querySelector('.body');
-
-
-switchBg.addEventListener('click', ()=> {
-    switchBg.classList.toggle('active');
-    body.classList.toggle('active');
-
-})
-
-
-
-    </script>
-</head>
-<body class="body">
-    <nav class="container">
-        <span class="toggle"></span>
-    </nav>
-</body>
-</html>
