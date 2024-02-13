@@ -4,57 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-    margin: 1rem;
-    padding: 1rem;
-    box-sizing: border-box;
-}
-.body{
-    background: #33333385;
-}
-.body.active {
-    background: white;
-}
-.container{
-    width: 6rem;
-    height: 3rem;
-    background: #333;
-    border-radius: 9999px;
-    display: relative;
-}
-.toggle{
-    width: 0.5rem;
-    height: 5px;
-    background: white;
-    border-radius: 17rem;
-    position: absolute;
-    align-items: center;
-    margin: 7px auto;
-    transition: transform 1s;
-    cursor: pointer;
-    top: 5rem;
-}
-.container.active .toggle{
-    transform: translate(100%);
-    transition: 1s;
-    background: blue;
-}
-    </style>
-    <script defer>
-        const switchBg = document.querySelector(".container");
-const body = document.querySelector('.body');
-
-
-switchBg.addEventListener('click', ()=> {
-    switchBg.classList.toggle('active');
-    body.classList.toggle('active');
-
-})
-
-
-
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body class="body">
     <nav class="container">
